@@ -1,0 +1,8 @@
+:root {
+	--font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 100vw;
+	font-family: var(--font-family);
+}
