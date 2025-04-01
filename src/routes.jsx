@@ -1,9 +1,16 @@
-import Root from "./routes/Root";
+import Root from "./routes/Root/Root.jsx";
+import Shop from "./routes/Shop/Shop.jsx";
 
 const routes = [
     {
         path: "/",
-        element: <Root />
+        element: <Root />,
+        children: [
+            {
+                path: "shop",
+                element: <Shop />
+            }
+        ]
     }
 ]
 
