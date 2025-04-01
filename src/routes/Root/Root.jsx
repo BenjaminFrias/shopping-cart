@@ -1,14 +1,10 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet} from "react-router-dom";
+import { Navbar } from "../../components/Navbar/Navbar.jsx"
 
 function Root() {
     return (
         <div className="container">
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/shop">Shop</Link></li>
-                </ul>
-            </nav>
+            <Navbar />
             <Outlet />
         </div>
     )
